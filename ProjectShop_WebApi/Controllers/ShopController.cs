@@ -45,5 +45,14 @@ namespace ProjectShop_WebApi.Controllers
             return Find;
         }
 
+        //RestFull Api Insert
+        [Route("InsertProduct/{id}/{code}/{name}/{price}")]
+        [HttpPost]
+        public async Task<ListProduct> InsertProduct(ListProduct listProduct)
+        {
+            return listProduct;
+        }
+
+
     }
 }
